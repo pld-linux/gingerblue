@@ -1,12 +1,12 @@
 Summary:	Free Music Software for GNOME
 Summary(pl.UTF-8):	Wolnodostępne oprogramowanie muzyczne dla GNOME
 Name:		gingerblue
-Version:	0.3.0
+Version:	0.4.1
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gingerblue/0.3/%{name}-%{version}.tar.xz
-# Source0-md5:	18b850c65337f9ce55af692778babb64
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gingerblue/0.4/%{name}-%{version}.tar.xz
+# Source0-md5:	e807ff1eb89aa71526e309be7bb49fd2
 URL:		https://wiki.gnome.org/Apps/Gingerblue
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11
@@ -16,7 +16,7 @@ BuildRequires:	glib2-devel >= 1:2.38.0
 BuildRequires:	gstreamer-devel >= 1.0
 BuildRequires:	gstreamer-plugins-bad-devel >= 1.0
 BuildRequires:	gstreamer-plugins-base-devel >= 1.0
-BuildRequires:	gtk+3-devel >= 3.22.30
+BuildRequires:	gtk+3-devel >= 3.24.29
 BuildRequires:	intltool >= 0.50.1
 BuildRequires:	libchamplain-devel >= 0.12.10
 BuildRequires:	libxml2-devel >= 2.0
@@ -32,7 +32,7 @@ Requires:	glib2 >= 1:2.38.0
 Requires:	gstreamer-plugins-bad >= 1.0
 Requires:	gstreamer-plugins-base >= 1.0
 Requires:	gstreamer-plugins-good >= 1.0
-Requires:	gtk+3 >= 3.22.30
+Requires:	gtk+3 >= 3.24.29
 Requires:	hicolor-icon-theme
 Requires:	libchamplain >= 0.12.10
 Requires:	pango >= 1:0.28
