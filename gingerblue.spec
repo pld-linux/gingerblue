@@ -1,12 +1,12 @@
 Summary:	Free Music Software for GNOME
 Summary(pl.UTF-8):	Wolnodostępne oprogramowanie muzyczne dla GNOME
 Name:		gingerblue
-Version:	0.5.0
+Version:	0.6.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gingerblue/0.5/%{name}-%{version}.tar.xz
-# Source0-md5:	805d690dea64f5a95d2bdfa304202b78
+Source0:	https://download.gnome.org/sources/gingerblue/0.6/%{name}-%{version}.tar.xz
+# Source0-md5:	51c8752b1992f174bc2e90b673fa2304
 URL:		https://wiki.gnome.org/Apps/Gingerblue
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11
@@ -19,6 +19,7 @@ BuildRequires:	gstreamer-plugins-base-devel >= 1.0
 BuildRequires:	gtk+3-devel >= 3.24.29
 BuildRequires:	intltool >= 0.50.1
 BuildRequires:	libchamplain-devel >= 0.12.10
+BuildRequires:	libshout-devel >= 2.4.3
 BuildRequires:	libxml2-devel >= 2.0
 BuildRequires:	pango-devel >= 1:0.28
 BuildRequires:	pkgconfig
@@ -35,6 +36,7 @@ Requires:	gstreamer-plugins-good >= 1.0
 Requires:	gtk+3 >= 3.24.29
 Requires:	hicolor-icon-theme
 Requires:	libchamplain >= 0.12.10
+Requires:	libshout >= 2.4.3
 Requires:	pango >= 1:0.28
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
