@@ -1,12 +1,12 @@
 Summary:	Free Music Software for GNOME
 Summary(pl.UTF-8):	Wolnodostępne oprogramowanie muzyczne dla GNOME
 Name:		gingerblue
-Version:	0.7.0
+Version:	1.0.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gingerblue/0.7/%{name}-%{version}.tar.xz
-# Source0-md5:	4ea86ffc39a5297e2e746720415b6355
+Source0:	https://download.gnome.org/sources/gingerblue/1.0/%{name}-%{version}.tar.xz
+# Source0-md5:	4a5e697927143c9dbb9ce4c75a0d3730
 URL:		https://wiki.gnome.org/Apps/Gingerblue
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11
@@ -88,6 +88,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README TODO
 %attr(755,root,root) %{_bindir}/gingerblue
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/icecast-server.xml
 %{_datadir}/metainfo/gingerblue.appdata.xml
 %{_desktopdir}/gingerblue.desktop
 %{_iconsdir}/hicolor/*x*/apps/gingerblue.png
