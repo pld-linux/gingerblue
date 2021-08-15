@@ -1,16 +1,17 @@
 Summary:	Free Music Software for GNOME
 Summary(pl.UTF-8):	Wolnodostępne oprogramowanie muzyczne dla GNOME
 Name:		gingerblue
-Version:	1.1.0
+Version:	1.4.0
 Release:	1
 License:	GPL v3
 Group:		X11/Applications
-Source0:	https://download.gnome.org/sources/gingerblue/1.1/%{name}-%{version}.tar.xz
-# Source0-md5:	74eeee64297f04e73a51c2f7415cfdd9
+Source0:	https://download.gnome.org/sources/gingerblue/1.4/%{name}-%{version}.tar.xz
+# Source0-md5:	936c34bdf9bbbd3de3d4f74a224c7ca5
 URL:		https://wiki.gnome.org/Apps/Gingerblue
 BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake >= 1:1.11
 BuildRequires:	geocode-glib-devel >= 3.20
+BuildRequires:	geoclue2-devel >= 2.5.7
 BuildRequires:	gettext-tools
 BuildRequires:	glib2-devel >= 1:2.38.0
 BuildRequires:	gstreamer-devel >= 1.0
@@ -28,6 +29,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 Requires(post,postun):	desktop-file-utils
 Requires(post,postun):	gtk-update-icon-cache
+Requires:	geoclue2 >= 2.5.7
 Requires:	geocode-glib >= 3.20
 Requires:	glib2 >= 1:2.38.0
 Requires:	gstreamer-plugins-bad >= 1.0
