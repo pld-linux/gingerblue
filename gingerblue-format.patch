@@ -1,0 +1,13 @@
+--- gingerblue-2.0.0/src/gingerblue-main.c.orig	2021-10-16 04:33:10.000000000 +0200
++++ gingerblue-2.0.0/src/gingerblue-main.c	2021-10-18 18:17:27.586099789 +0200
+@@ -526,8 +526,8 @@ int main(int argc, char **argv)
+ 	fprintf(xspf, "<playlist version=\"1\" xmlns=\"http://xspf.org/ns/0/\">\n");
+ 	fprintf(xspf, "<trackList>\n");
+ 	fprintf(xspf, "<track>\n");
+-	fprintf(xspf, g_strconcat("<title>", gtk_entry_get_text(GTK_ENTRY(song_entry)), "</title>\n", NULL));
+-	fprintf(xspf, g_strconcat("<location>file://", gtk_entry_get_text(GTK_ENTRY(computer_entry)), "/", gtk_entry_get_text(GTK_ENTRY(recording_entry)), "</location>\n", NULL));
++	fprintf(xspf, "<title>%s</title>\n", gtk_entry_get_text(GTK_ENTRY(song_entry)));
++	fprintf(xspf, "<location>file://%s/%s</location>\n", gtk_entry_get_text(GTK_ENTRY(computer_entry)), gtk_entry_get_text(GTK_ENTRY(recording_entry)));
+ 	fprintf(xspf, "</track>\n");
+ 	fprintf(xspf, "</trackList>\n");
+ 	fprintf(xspf, "</playlist>\n");
